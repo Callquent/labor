@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Candidature {
+  id              String   @id
+  titre           String
+  spontanee       Boolean  @default(false)
+  dateCandidature String   @default("")
+  anciennesDates  String   @default("[]")
+  entreprise      String   @default("")
+  typeContrat     String   @default("CDI")
+  localisation    String   @default("")
+  sourceLien      String   @default("")
+  etape           String   @default("Je dois postuler")
+  resultat        String   @default("En attente")
+  dateEntretien   String   @default("")
+  adresse            String   @default("")
+  dateRefus          String   @default("")
+  motifRefus         String   @default("")
+  statutEntreprise   String   @default("")
+  nbSalaries         String   @default("")
+  activiteEntreprise String   @default("")
+  nomRecruteur       String   @default("")
+  emailRecruteur     String   @default("")
+  telRecruteur       String   @default("")
+  creeLe          DateTime @default(now())
+  majLe           DateTime @updatedAt
+}
+
+model Reglage {
+  cle    String @id
+  valeur String
+}
