@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jalon · Suivi de candidatures",
+  title: "Suivi de candidatures",
   description: "Suivre ses candidatures et leur avancement, étape par étape",
 };
 

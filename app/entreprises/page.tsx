@@ -93,8 +93,7 @@ export default function PageEntreprises() {
         <div className="marque">
           <Logo size={46} />
           <div>
-            <h1 className="titre-marque">Jalon</h1>
-            <p>Suivi de candidatures</p>
+            <h1 className="titre-marque">Suivi de candidatures</h1>
           </div>
         </div>
       </header>
